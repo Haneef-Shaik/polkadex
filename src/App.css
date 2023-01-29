@@ -1,0 +1,106 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url("./assets/fonts/CircularStd-Black.otf") format('opentype');
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url("./assets/fonts/CircularStd-Medium.otf") format('opentype');
+}
+
+.App {
+  text-align: center;
+  background-color: #121316;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+color: #FFFFFF;
+  
+}
+
+.App-header {
+  background-image: url("./assets/images/Groupbg.png") ,linear-gradient( black,transparent ,black);
+  background-blend-mode: darken;
+  background-position:center;
+  background-size:auto;
+  height: 100vh;
+  width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+  
+}
+
+.challenge{
+  font-family: 'Circular Std';
+font-style: normal;
+font-weight: 700;
+font-size: 32.1465px;
+line-height: 41px;
+z-index: 1;
+}
+
+.challenge span{
+color: #E6007A;
+z-index: 1;
+}
+
+.firstSlider {
+  top:20%;
+  left:-100%;
+
+  opacity: 0.5;
+  animation: slider 10s linear forwards infinite;
+  animation-delay: 2s;
+
+}
+.secondSlider{
+
+  top:40%;
+  left:-100%;
+  opacity: 0.5;
+  animation: slider 10s linear forwards infinite; 
+
+}
+
+.firstSlider , .secondSlider {
+  position:fixed;
+  z-index: 0;
+}
+
+.description{
+  font-family: 'Calibre';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 125%;
+text-align: center;
+
+
+}
+
+.title{
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 100%;
+}
+
+@keyframes slider {
+
+  from {
+    left: -100%;
+  }
+  to{
+    left: 100%;
+  }
+  
+}

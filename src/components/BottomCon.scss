@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "Circular";
+  src: url("../assets/fonts/CircularStd-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../assets/fonts/CircularStd-Medium.otf") format("opentype");
+}
+.borderBox {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 24.7141px;
+  padding: 2px;
+  cursor: pointer;
+  transition: 2s;
+  z-index: 1;
+
+  .bottomBox {
+    min-width: 706px;
+    height: 91.44px;
+    background: linear-gradient(
+        267.64deg,
+        rgba(103, 69, 210, 0.2) 0%,
+        rgba(103, 69, 210, 0) 28.32%
+      ),
+      radial-gradient(
+        133.78% 573.84% at 10.27% 25.68%,
+        rgba(230, 0, 122, 0.2) 0%,
+        rgba(230, 0, 122, 0) 100%
+      ),
+      #000000;
+    cursor: pointer;
+
+    box-shadow: 0px 26.3617px 166.408px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    .singleCon {
+      box-shadow: 0px 26.3617px 166.408px rgba(0, 0, 0, 0.25);
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
+      height: 100%;
+      min-width: 187px;
+      font-size: 20px;
+      cursor: pointer;
+      padding: 5%;
+      .fortitle {
+        text-align: left;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 125%;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.searchIcon {
+  background: rgba(139, 161, 190, 0.2);
+  background-size: contain;
+  background-position: center;
+  width: 68.38px;
+  height: 68.38px;
+  border-radius: 16.4761px;
+}
+.searchIcon2 {
+  background: #e6007a;
+  border-radius: 16.4761px;
+  font-size: 30px;
+  padding: 10px 10px;
+}
+
+.cardContainer {
+  color: #333333;
+  z-index: 1;
+  transition: 0.6s;
+  width: 386px;
+  height: 288px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 24.7141px;
+
+  .cards {
+    position: absolute;
+    display: flex;
+    padding: auto;
+    transition: 0.6s;
+    width: 1256px;
+    top: 0;
+    background: #ffffff;
+  }
+  .card1 {
+    width: 386px;
+    height: 288px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    gap: 24px;
+
+    box-shadow: 0px 26.3617px 166.408px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+
+    // animation: card1Height 0.6s linear forwards;
+    .title {
+      align-self: start;
+      font-weight: 450;
+      font-size: 20px;
+    }
+    .tokens {
+      display: flex;
+      gap: 19px;
+      .token {
+        width: 160px;
+        height: 198px;
+        border: 2px solid #828282;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 41px;
+        .imgdiv {
+          width: 54px;
+          height: 54px;
+          background: #1c1c2618;
+          border-radius: 15px;
+          background-size: contain;
+          box-shadow: 0px 26.3617px 166.408px rgba(0, 0, 0, 0.25);
+        }
+        .details {
+          font-family: "Calibri";
+          font-weight: 400;
+          line-height: 125%;
+          .name {
+            font-size: 22px;
+            color: #1c1c26;
+          }
+          .code {
+            font-size: 20px;
+            color: #1c1c26;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+  }
+  .card2 {
+    width: 435px;
+    height: 288px;
+    box-shadow: 0px 26.3617px 166.408px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .title {
+      align-self: start;
+      font-weight: 450;
+      font-size: 20px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      .option {
+        width: 403px;
+        height: 69px;
+        border: 1px solid #828282;
+        border-radius: 20px;
+        padding: 2%;
+        padding-right: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 125%;
+        color: #1c1c26;
+        .text {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .dot {
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          // background-color: #e6007a;
+          background: rgba(139, 161, 190, 0.2);
+        }
+      }
+      .selectOption {
+        width: 85px;
+        height: 48px;
+        background: rgba(139, 161, 190, 0.1);
+        border-radius: 12px;
+        font-family: "Calibri";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 125%;
+        /* identical to box height, or 28px */
+
+        text-align: center;
+
+        /* Gray 3 */
+
+        color: #828282;
+      }
+    }
+  }
+
+  .card3 {
+    box-shadow: 0px 26.3617px 166.408px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+
+    width: 435px;
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    gap: 29px;
+
+    .title {
+      align-self: start;
+      font-weight: 450;
+      font-size: 20px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .maxCount,
+      .minCount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 54.25px;
+      }
+      .maxCount {
+        padding-bottom: 12px;
+        border-bottom: 2px solid #828282;
+      }
+      .counter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 7.49px;
+        width: 108.51px;
+        .funBtn {
+          font-family: "Calibri";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16.7324px;
+          line-height: 125%;
+          /* identical to box height, or 21px */
+
+          text-align: center;
+
+          /* Gray 3 */
+
+          color: #828282;
+          align-self: center;
+        }
+      }
+    }
+
+    .funBtn {
+      cursor: pointer;
+      background: rgba(139, 161, 190, 0.1);
+      border-radius: 9.12676px;
+      width: 36.51px;
+      height: 36.51px;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movingBoder {
+  background: radial-gradient(#e6007a, #6745d2);
+  padding: 2px;
+  border-radius: 12px;
+}
+.movingBoderInner {
+  background: linear-gradient(
+      267.64deg,
+      rgba(103, 69, 210, 0.2) 0%,
+      rgba(103, 69, 210, 0) 28.32%
+    ),
+    radial-gradient(
+      133.78% 573.84% at 10.27% 25.68%,
+      rgba(230, 0, 122, 0.2) 0%,
+      rgba(230, 0, 122, 0) 100%
+    ),
+    #000000;
+  border-radius: 12px;
+  height: 100%;
+}
+
+@keyframes card1Height {
+  from {
+    width: 0;
+  }
+  to {
+    width: 386px;
+  }
+}
